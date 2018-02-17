@@ -184,7 +184,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 293606167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.9061409, y: 1.6269896, z: -6.1635027}
+  m_LocalPosition: {x: 1.9061409, y: 1.6269896, z: -4.292249}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -621,3 +621,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testShrimp: {fileID: 1000012244298164, guid: 3c2e7dbde68087547ae2eeca74dffec4, type: 2}
+  force: -1500
+  timerMax: 0.5

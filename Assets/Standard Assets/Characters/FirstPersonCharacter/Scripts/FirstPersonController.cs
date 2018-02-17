@@ -63,10 +63,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             RotateView();
             // the jump state needs to read here to make sure it is not missed
+            if (m_Jumping)
+            {
+                //CrossPlatformInputManager.GetAxisRaw("Jump") = 0;
+                m_Jump = false;
+            }
             if (!m_Jump)
             {
-                m_Jump = CrossPlatformInputManager.GetAxis("Jump")==1;
-                if (CrossPlatformInputManager.GetAxis("Jump") == 1)
+                //m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+                m_Jump = CrossPlatformInputManager.GetAxisRaw("Jump") == 1;
+                if (CrossPlatformInputManager.GetAxisRaw("Jump") == 1)
                 {
                     Debug.Log("jumpin");
                 }

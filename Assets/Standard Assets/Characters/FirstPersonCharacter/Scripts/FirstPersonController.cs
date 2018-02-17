@@ -41,6 +41,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
+        public int playerNum = 0;
 
         // Use this for initialization
         private void Start()
@@ -70,12 +71,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             if (!m_Jump)
             {
-                //m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
-                m_Jump = CrossPlatformInputManager.GetAxisRaw("Jump") == 1;
-                if (CrossPlatformInputManager.GetAxisRaw("Jump") == 1)
-                {
-                    Debug.Log("jumpin");
-                }
+                m_Jump = CrossPlatformInputManager.GetAxisRaw("Jump"+playerNum) == 1;
             }
 
             if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
@@ -214,8 +210,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private void GetInput(out float speed)
         {
             // Read input
-            float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
-            float vertical = CrossPlatformInputManager.GetAxis("Vertical");
+            float horizontal = CrossPlatformInputManager.GetAxis("Horizontal" + playerNum);
+            float vertical = CrossPlatformInputManager.GetAxis("Vertical" + playerNum);
 
             bool waswalking = m_IsWalking;
 

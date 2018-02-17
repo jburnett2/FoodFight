@@ -244,6 +244,11 @@ Prefab:
       propertyPath: m_CustomSkybox
       value: 
       objectReference: {fileID: 2100000, guid: dd4330fb196ead84ea9d14e6bbbe8ed5, type: 2}
+    - target: {fileID: 114675990269932378, guid: dc02873636c7fbf40ba556fcc710bcf7,
+        type: 2}
+      propertyPath: thow
+      value: 
+      objectReference: {fileID: 2104649161}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc02873636c7fbf40ba556fcc710bcf7, type: 2}
   m_IsPrefabParent: 0
@@ -590,6 +595,16 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 54221282021872100, guid: b7cc37b9006875740b11e9dd20e21723,
+        type: 2}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114885828723475918, guid: b7cc37b9006875740b11e9dd20e21723,
+        type: 2}
+      propertyPath: rotSpeed
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7cc37b9006875740b11e9dd20e21723, type: 2}
   m_IsPrefabParent: 0
@@ -919,6 +934,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2104649161 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114681660481709726, guid: dc02873636c7fbf40ba556fcc710bcf7,
+    type: 2}
+  m_PrefabInternal: {fileID: 418372132}
+  m_Script: {fileID: 11500000, guid: f4ff6207caba93b42abc59a6fd18a455, type: 3}
 --- !u!1 &2114195147
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,7 +950,7 @@ GameObject:
   - component: {fileID: 2114195148}
   - component: {fileID: 2114195149}
   m_Layer: 0
-  m_Name: FoodEmitter
+  m_Name: FudEmitter
   m_TagString: Untagged
   m_Icon: {fileID: 7707008975528953803, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

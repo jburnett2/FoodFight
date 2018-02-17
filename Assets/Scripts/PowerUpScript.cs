@@ -11,6 +11,6 @@ public class PowerUpScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//gameObject.transform.r
+		transform.Rotate (transform.up, rotSpeed * Time.deltaTime);
 	}
 }

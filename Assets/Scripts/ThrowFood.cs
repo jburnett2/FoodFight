@@ -22,7 +22,7 @@ public class ThrowFood : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (chippedUp) {
-			if (Input.GetButton ("Fire1")) {
+			if (Input.GetButton ("Fire1") || Input.GetAxisRaw("Fire" + playerNum) == 1) {
 				var tmpFood = Instantiate (Resources.Load("Prefabs/chip")as GameObject,gameObject.transform);
 				Rigidbody foodRig = tmpFood.GetComponent<Rigidbody> ();
 				foodRig.AddForce (transform.forward * force);

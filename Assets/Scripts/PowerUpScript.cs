@@ -13,4 +13,12 @@ public class PowerUpScript : MonoBehaviour {
 	void Update () {
 		transform.Rotate (transform.up, rotSpeed * Time.deltaTime);
 	}
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }

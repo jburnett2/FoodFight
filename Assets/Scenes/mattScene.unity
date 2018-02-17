@@ -229,6 +229,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4993741152667314, guid: dc02873636c7fbf40ba556fcc710bcf7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc02873636c7fbf40ba556fcc710bcf7, type: 2}
   m_IsPrefabParent: 0
@@ -472,6 +476,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &886156846 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1052860732336830, guid: dc02873636c7fbf40ba556fcc710bcf7,
+    type: 2}
+  m_PrefabInternal: {fileID: 418372132}
+--- !u!45 &886156851
+Skybox:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 886156846}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: dd4330fb196ead84ea9d14e6bbbe8ed5, type: 2}
 --- !u!1001 &1057127575
 Prefab:
   m_ObjectHideFlags: 0

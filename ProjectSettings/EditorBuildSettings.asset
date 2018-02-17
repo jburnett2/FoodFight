@@ -4,4 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/MentalDreamsAssets/BarrelPack/Scene/Barrels.unity
+    guid: cd5f475624585984c8b101bfbc8a9f6b

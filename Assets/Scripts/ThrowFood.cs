@@ -18,13 +18,14 @@ public class ThrowFood : MonoBehaviour {
 	void Update () {
 		
 		if (Input.GetButton ("Fire1") && count <= 0) {
-			var tmpFood = Instantiate (testShrimp,gameObject.transform);
+			var randFood = Random.Range (0, 11);
+			var tmpFood = Instantiate (Resources.Load("Prefabs/" +randFood)as GameObject,gameObject.transform);
 			Rigidbody foodRig = tmpFood.GetComponent<Rigidbody> ();
 			foodRig.AddForce (new Vector3 (force, 0, 0));
 			count = timerMax;
 		}
 		count -= Time.deltaTime;
-		print (count);
+		//print (count);
 	}
 
 

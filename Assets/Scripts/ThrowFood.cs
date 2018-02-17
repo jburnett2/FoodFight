@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ThrowFood : MonoBehaviour {
 
-	public GameObject testShrimp;
+    public int playerNum = 0;
+    public GameObject testShrimp;
 	public float force = 10f;
 	public float timerMax = 10f;
 
@@ -31,7 +32,7 @@ public class ThrowFood : MonoBehaviour {
 				}
 			}
 		}
-		else if ((Input.GetButton ("Fire1") || Input.GetAxisRaw("Fire2")==1) && count <= 0) {
+		else if ((Input.GetButton ("Fire1") || Input.GetAxisRaw("Fire" + playerNum) ==1) && count <= 0) {
 			var randFood = Random.Range (0, 17);
 			var tmpFood = Instantiate (Resources.Load("Prefabs/" +randFood)as GameObject,gameObject.transform);
 			Rigidbody foodRig = tmpFood.GetComponent<Rigidbody> ();

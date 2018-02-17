@@ -14,7 +14,9 @@ public class ThrowFood : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetButtonDown ("Fire1")) {
-			var tmpFood = Instantiate (testShrimp);
+			var tmpFood = Instantiate (testShrimp,gameObject.transform);
+			Rigidbody foodRig = tmpFood.GetComponent<Rigidbody> ();
+			foodRig.AddForce (new Vector3 (0, 0, 10));
 		}
 	}
 

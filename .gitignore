@@ -79,6 +79,10 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+<<<<<<< HEAD
 .vs/advjam2-dodgetheseballs/v15/Server/sqlite3/db.lock
 .vs/advjam2-dodgetheseballs/v15/Server/sqlite3/storage.ide
 .vs/advjam2-dodgetheseballs/v15/Server/sqlite3/storage.ide-wal
+=======
+Assets/FREE Food Pack/Textures/Thumbs.db.meta
+>>>>>>> 359151782bcd5af4ca0e22fbf473a6e7404cc37c

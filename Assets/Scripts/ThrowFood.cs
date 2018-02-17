@@ -17,8 +17,8 @@ public class ThrowFood : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		if (Input.GetButton ("Fire1") && count <= 0) {
-			var randFood = Random.Range (0, 11);
+		if ((Input.GetButton ("Fire1") || Input.GetAxisRaw("Fire2")==1) && count <= 0) {
+			var randFood = Random.Range (0, 17);
 			var tmpFood = Instantiate (Resources.Load("Prefabs/" +randFood)as GameObject,gameObject.transform);
 			Rigidbody foodRig = tmpFood.GetComponent<Rigidbody> ();
 			foodRig.AddForce (transform.forward * force);

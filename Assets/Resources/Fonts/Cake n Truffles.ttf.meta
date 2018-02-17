@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 67acbbe65228c344798155219c200656
+timeCreated: 1518909456
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Cake n Truffles
+  fontNames:
+  - Cake n Truffles
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

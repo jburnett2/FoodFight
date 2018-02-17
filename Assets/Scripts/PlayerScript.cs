@@ -9,6 +9,7 @@ public class PlayerScript : MonoBehaviour {
 	public int playerNum = 0;
 	public int damage = 5;
 	public int health;
+	public ThrowFood thow;
 
 	public Text healthText;
 	// Use this for initialization
@@ -23,10 +24,21 @@ public class PlayerScript : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision col){
+		
 		if (col.gameObject.tag == "Food") {
 			health -= damage;
 			print (health);
 			healthText.text = "Health: " + health;
 		}
+
 	}
+
+	void OnTriggerEnter(Collider col){
+		if (col.gameObject.tag == "Chipbag") {
+			print ("Chips");
+			thow.chippedUp = true;
+			thow.powerTimer = thow.powerUpCooldown;
+		}
+	}
+		
 }

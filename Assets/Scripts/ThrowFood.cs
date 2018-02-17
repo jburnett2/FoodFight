@@ -21,7 +21,7 @@ public class ThrowFood : MonoBehaviour {
 			var randFood = Random.Range (0, 11);
 			var tmpFood = Instantiate (Resources.Load("Prefabs/" +randFood)as GameObject,gameObject.transform);
 			Rigidbody foodRig = tmpFood.GetComponent<Rigidbody> ();
-			foodRig.AddForce (new Vector3 (force, 0, 0));
+			foodRig.AddForce (transform.forward * force);
 			count = timerMax;
 		}
 		count -= Time.deltaTime;

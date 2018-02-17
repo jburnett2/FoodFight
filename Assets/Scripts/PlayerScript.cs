@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour {
-	public Canvas canvas;
+	//public Canvas canvas;
 	public int maxHealth = 100;
 	public int playerNum = 0;
 	public int damage = 5;

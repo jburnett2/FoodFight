@@ -25,8 +25,8 @@ GameObject:
   - component: {fileID: 64795096098818954}
   - component: {fileID: 114277521548498084}
   m_Layer: 0
-  m_Name: Tempura
-  m_TagString: Untagged
+  m_Name: 0
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
